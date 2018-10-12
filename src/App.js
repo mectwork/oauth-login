@@ -10,6 +10,11 @@ class App extends Component {
     const responseGoogle = (response) => {
       console.log(response);
     }
+
+    const responseFacebook = (response) => {
+      console.log(response);
+    }
+
     console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID);
     return (
       <div className="App">
@@ -24,8 +29,10 @@ class App extends Component {
           appId="289982788274488"
           autoLoad={true}
           fields="name,email,picture"
-          onClick={componentClicked}
-          callback={responseFacebook} />
+          callback={responseFacebook}
+          cssClass="my-facebook-button-class"
+          icon="fa-facebook"
+        />
       </div>
 
     );

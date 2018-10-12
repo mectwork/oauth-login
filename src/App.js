@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
 
 import './App.css';
 
@@ -18,6 +19,13 @@ class App extends Component {
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
         />
+
+        <FacebookLogin
+          appId="289982788274488"
+          autoLoad={true}
+          fields="name,email,picture"
+          onClick={componentClicked}
+          callback={responseFacebook} />
       </div>
 
     );

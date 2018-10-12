@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <GoogleLogin
-          clientId="160139527198-prg182e9vstjvi5q0527h4si2jb081u8.apps.googleusercontent.com"
+          clientId="799799953276-e3g5t7gp4g1hr08lp03deabqu0js43th.apps.googleusercontent.com"
           buttonText="Login"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
